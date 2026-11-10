@@ -1,0 +1,17 @@
+{
+  "purpose": "Immutable SAPTHAGIRI AI CAMPUS visual reference. These original files must not be edited, regenerated, cropped, recolored, compressed, replaced or altered.",
+  "canonicalFile": "attached_assets/Futuristic_University_Campus_Dashboard_1791531879550.png",
+  "usage": "Read-only visual comparison and component design guidance. No Canva or image-editor handoff, image editing, image generation, substitute imagery, or collage-as-website rendering.",
+  "sha256": "41db1c8117c15052e367882aa5899bf4cefd5c782986677598bbe70ea2a1f7e7",
+  "bytes": 2516603,
+  "width": 1672,
+  "height": 941,
+  "originalFiles": [
+    "attached_assets/0_Futuristic_University_Campus_Dashboard_1791528871771.png",
+    "attached_assets/0_Futuristic_University_Campus_Dashboard_1791528890274.png",
+    "attached_assets/0_Futuristic_University_Campus_Dashboard_1791529110976.png",
+    "attached_assets/Futuristic_University_Campus_Dashboard_1791531879550.png",
+    "attached_assets/0_Futuristic_University_Campus_Dashboard_1791538051907.png"
+  ],
+  "note": "All five supplied files have the same hash and contain the approved design board, not standalone campus photography. The user selected code-only UI improvements with photographic matching pending. Every original remains unchanged."
+}

@@ -1,0 +1,650 @@
+PROJECT: SAPTHAGIRI AI CAMPUS
+MISSION: MAXIMIZE HACKATHON EVALUATION PERFORMANCE
+
+The application will be evaluated on these seven critical factors:
+
+1. Code Quality
+2. Security
+3. Testing
+4. Efficiency
+5. Accessibility
+6. Google Services Integration
+7. Problem Statement Alignment
+8. Real-World Interaction
+
+Treat all eight as mandatory engineering priorities.
+
+The objective is not merely to create a visually impressive demonstration.
+
+The objective is to build a professional, reliable, secure, accessible, efficient, and demonstrably useful AI-powered campus platform.
+
+Do not claim that any criterion is satisfied until you have verified the relevant implementation.
+
+==================================================
+1. CODE QUALITY
+==================================================
+
+Conduct a comprehensive audit of the existing codebase before making changes.
+
+Requirements:
+
+- Follow the existing framework and architectural conventions.
+- Use a modular, maintainable component architecture.
+- Separate UI components, business logic, API clients, validation, and data access.
+- Avoid unnecessarily large components and duplicated logic.
+- Use consistent naming conventions.
+- Apply strict typing wherever TypeScript is used.
+- Remove unused imports, dead code, obsolete components, and unnecessary dependencies.
+- Avoid excessive abstraction and overengineering.
+- Centralize configuration.
+- Use reusable design tokens for typography, colours, spacing, shadows, and themes.
+- Keep environment-specific configuration out of source code.
+- Implement predictable error handling.
+- Provide useful error messages without exposing internal implementation details.
+- Add loading, empty, success, and failure states.
+- Preserve the mandatory sitemap and existing working functionality.
+
+Do not rewrite functioning backend logic without a demonstrated reason.
+
+Do not sacrifice maintainability for visual effects.
+
+The 3D interface must remain modular and must not make the entire application unnecessarily difficult to maintain.
+
+VERIFICATION:
+
+- Run the available linting tools.
+- Run type checking.
+- Run the production build.
+- Fix errors introduced by the changes.
+- Report any remaining warnings or known technical debt.
+
+==================================================
+2. SECURITY
+==================================================
+
+Perform a security review appropriate for a university-facing application.
+
+A. AUTHENTICATION AND AUTHORIZATION
+
+- Separate demo access from real authentication.
+- Never treat a selected demo persona as a verified real-world identity.
+- Enforce authorization on the server for protected operations.
+- Do not rely exclusively on frontend route guards.
+- Apply role-based access control.
+- Prevent students from accessing administrator-only operations.
+- Restrict event-management operations to authorized organizers.
+- Restrict administrative intelligence and sensitive investigations to authorized personnel.
+- Ensure users cannot access another user's private records by manipulating identifiers.
+
+B. CREDENTIALS AND API KEYS
+
+- Never expose Gemini API keys, OAuth client secrets, database credentials, or service-account credentials in frontend bundles.
+- Keep private credentials in server-side environment variables or an appropriate secret manager.
+- Never commit credentials to the repository.
+- Verify that secrets are not returned in API responses or logs.
+- Provide a clear setup guide for required environment variables.
+
+C. DATA PROTECTION
+
+- Collect only information needed for a feature.
+- Protect student information and parent-child associations.
+- Avoid exposing phone numbers, addresses, private schedules, or sensitive student information.
+- Apply appropriate authorization to student lookup.
+- Do not implement unrestricted real-time student tracking.
+- Treat estimated locations as uncertain predictions, not verified facts.
+- Use synthetic data in demo mode.
+- Clearly label demonstration records.
+- Do not mix demo records with real university records.
+
+D. APPLICATION SECURITY
+
+Review the application for:
+
+- Broken access control.
+- Cross-site scripting.
+- Injection vulnerabilities.
+- Insecure file uploads.
+- Sensitive information leakage.
+- Unsafe redirects.
+- Missing input validation.
+- Insecure session handling.
+- Excessive API access.
+- Abuse of public endpoints.
+- Dependency vulnerabilities.
+- Inappropriate error disclosure.
+
+Use secure session handling appropriate to the authentication architecture.
+
+Apply rate limiting to sensitive or expensive endpoints where appropriate.
+
+Validate inputs on the server even when client-side validation exists.
+
+Use parameterized database queries or the framework's safe query mechanisms.
+
+Implement CSRF protections where applicable to the chosen authentication and cookie architecture.
+
+Do not invent security guarantees.
+
+VERIFICATION:
+
+Run available dependency and security checks.
+
+Report findings by severity, including any unresolved critical or high-risk issues.
+
+Do not declare the application production-secure merely because a scan reports no findings.
+
+==================================================
+3. TESTING
+==================================================
+
+Create a testing strategy covering unit, integration, and end-to-end tests.
+
+A. UNIT TESTS
+
+Test important business logic, including:
+
+- Input validation.
+- Role and permission checks.
+- Event eligibility.
+- Registration capacity.
+- Issue severity classification.
+- Lost-item matching logic.
+- Prediction confidence calculations, where implemented.
+- Data transformation and formatting.
+- Demo-data separation.
+
+B. INTEGRATION TESTS
+
+Test:
+
+- Frontend-to-backend communication.
+- API request validation.
+- Database operations.
+- Authentication and authorization.
+- Event registration and capacity enforcement.
+- Issue creation and status changes.
+- Lost-and-found reporting.
+- AI service error handling.
+- Google service integration where configured.
+
+C. END-TO-END TESTS
+
+Verify the primary user journeys:
+
+1. A visitor opens the landing page.
+2. The visitor enters demo mode.
+3. The visitor selects each of the six demo personas.
+4. The user navigates between portal modules.
+5. A student explores campus facilities.
+6. A user searches for an authorized campus resource.
+7. A user submits an issue report.
+8. A user reports a lost item and explores AI-assisted investigation.
+9. A student views and registers for an eligible event.
+10. An authorized organizer creates or manages an event.
+11. A venue change is reflected in relevant event information.
+12. The AI assistant opens, accepts messages, and handles errors.
+13. Light and dark modes work across routes.
+14. Authentication and onboarding behave correctly when configured.
+15. Unauthorized users cannot access protected operations.
+
+D. RESPONSIVE TESTING
+
+Test the application at representative desktop, tablet, and mobile sizes.
+
+Check:
+
+- Navigation.
+- Forms.
+- Dialogs.
+- Tables and dashboards.
+- The floating AI assistant.
+- The 3D map.
+- Light and dark themes.
+- Horizontal overflow.
+- Text clipping.
+- Keyboard interaction.
+
+E. FAILURE TESTING
+
+Test realistic failures:
+
+- Invalid input.
+- Network interruption.
+- Missing API credentials.
+- Expired sessions.
+- Permission denial.
+- Empty search results.
+- Database errors.
+- AI provider errors.
+- Duplicate event registrations.
+- Event capacity reached.
+
+Do not make tests pass by removing meaningful assertions.
+
+Do not claim tests passed unless they were actually executed.
+
+Report the test results, including failed and skipped tests.
+
+==================================================
+4. EFFICIENCY AND PERFORMANCE
+==================================================
+
+The website must remain responsive despite its advanced 3D design.
+
+A. FRONTEND PERFORMANCE
+
+- Avoid unnecessarily large JavaScript bundles.
+- Use lazy loading for noncritical pages and heavy visual components.
+- Load 3D resources only when needed.
+- Avoid excessive animation loops.
+- Use efficient rendering and avoid unnecessary component re-renders.
+- Optimize runtime work, not the original reference-image assets.
+- Use appropriate image loading strategies.
+- Reserve image dimensions to reduce layout shifts.
+- Avoid loading every dashboard module on the landing page.
+- Keep the main navigation responsive.
+- Provide reduced-motion alternatives.
+- Ensure that unsupported devices can still use the core application.
+
+B. BACKEND PERFORMANCE
+
+- Use pagination for potentially large datasets.
+- Avoid unnecessary database queries.
+- Add indexes for demonstrated query requirements.
+- Prevent duplicate requests where appropriate.
+- Apply reasonable timeouts and error handling.
+- Cache suitable non-sensitive data when beneficial.
+- Avoid caching private data across users.
+- Use background processing only when justified.
+- Apply rate limits to expensive operations.
+
+C. MEASUREMENT
+
+Measure performance using available browser tools and build reports.
+
+Use Core Web Vitals and Lighthouse where available.
+
+Investigate major layout shifts, slow loading, excessive JavaScript, and inaccessible interactions.
+
+Do not fabricate performance scores.
+
+Do not introduce complex infrastructure without evidence that it is needed.
+
+==================================================
+5. ACCESSIBILITY
+==================================================
+
+Aim for WCAG 2.2 Level AA conformance.
+
+Verify:
+
+- Semantic HTML.
+- Meaningful page headings.
+- Keyboard navigation.
+- Visible focus indicators.
+- Appropriate text contrast.
+- Accessible form labels.
+- Clear validation messages.
+- Accessible buttons and links.
+- Appropriate accessible names for icon-only controls.
+- Screen-reader-friendly status announcements.
+- Accessible dialogs and menus.
+- Keyboard-operable navigation.
+- Correct focus management.
+- Useful alternative text for informative images.
+- Appropriate decorative-image handling.
+- Reduced-motion support.
+- Readable text at different zoom levels.
+- Accessible error and success messages.
+
+Do not rely on colour alone to communicate severity or status.
+
+The floating AI assistant must be usable without a mouse.
+
+Voice features must have an equivalent text-based interaction.
+
+The 3D map must provide an accessible alternative, such as a searchable list of buildings and facilities.
+
+Users must not be forced to interact with 3D graphics to access essential campus information.
+
+The design must remain professional and visually impressive while preserving usability.
+
+Run automated accessibility checks and manually inspect important keyboard and screen-reader interactions where possible.
+
+Report known accessibility limitations honestly.
+
+==================================================
+6. GOOGLE SERVICES INTEGRATION
+==================================================
+
+Inspect the current project and determine which Google services are actually configured.
+
+Select integrations according to their usefulness to the campus use cases.
+
+Do not integrate services merely to display Google branding.
+
+POTENTIAL INTEGRATIONS:
+
+A. GEMINI
+
+Use a supported Gemini API for the AI Campus Guide when properly configured.
+
+Potential capabilities:
+
+- Campus-related question answering.
+- Guided navigation through the application.
+- Event discovery.
+- Assistance with reporting issues.
+- Lost-and-found assistance.
+- Context-aware help based on the current page and authorized user role.
+
+Use actual available application data when answering campus-specific questions.
+
+Do not fabricate campus facts.
+
+Do not send unnecessary private student data to an external model.
+
+Validate and authorize any requested actions before executing them.
+
+Never let an AI-generated response bypass server-side permissions.
+
+If Gemini is unavailable, show a clear fallback rather than pretending a live AI call succeeded.
+
+B. GOOGLE SIGN-IN
+
+If Google OAuth is configured, implement or verify a secure sign-in flow.
+
+Verify the authentication response server-side.
+
+Handle login errors, cancelled authorization, and onboarding.
+
+Do not confuse successful Google authentication with authorization to access university records.
+
+C. GOOGLE MAPS PLATFORM
+
+Evaluate whether Google Maps Platform is appropriate for real campus maps and navigation.
+
+If used, configure the relevant supported APIs and protect credentials.
+
+Use the real campus geography and available building data.
+
+Do not claim a real 3D campus map merely because a Google Map is embedded.
+
+D. GOOGLE CALENDAR
+
+If the event workflow benefits from it, evaluate adding calendar export or authorized Google Calendar integration.
+
+Keep user permissions and OAuth scopes limited to the actual functionality.
+
+Do not require broad calendar access when a simple downloadable calendar event is sufficient.
+
+E. OTHER GOOGLE SERVICES
+
+Only add other Google services when they solve a real requirement.
+
+Do not add unnecessary integrations that consume implementation time or introduce security risks.
+
+INTEGRATION RULES:
+
+- Verify the actual service and API configuration.
+- Keep secrets server-side.
+- Use minimal OAuth scopes.
+- Handle quotas and errors.
+- Provide clear fallback states.
+- Do not fabricate API responses.
+- Do not mark integrations as complete until tested.
+
+For each Google integration, report:
+
+1. Its intended purpose.
+2. Whether the credentials and configuration exist.
+3. Whether the implementation is complete.
+4. Whether a live request has been tested.
+5. Any missing setup steps.
+
+==================================================
+7. PROBLEM STATEMENT ALIGNMENT
+==================================================
+
+This is a critical judging criterion.
+
+The project is intended to address the Smart Campus Solutions theme through SAPTHAGIRI AI CAMPUS.
+
+However, do not assume that a broad theme alone proves compliance with the exact official problem statement.
+
+FIRST:
+
+Inspect the official problem statement, hackathon instructions, and any problem-statement document already available in the project.
+
+Extract:
+
+- The central problem.
+- Target users.
+- Required capabilities.
+- Expected outcome.
+- Explicit constraints.
+- Evaluation requirements.
+- Required technologies, if specified.
+
+Create a traceability matrix:
+
+OFFICIAL REQUIREMENT
+→ PRODUCT FEATURE
+→ IMPLEMENTATION LOCATION
+→ TEST OR DEMONSTRATION
+→ EVIDENCE OF SUCCESS
+
+Every explicit requirement must map to a concrete implementation and a demonstrable result.
+
+Identify missing requirements.
+
+Identify features that do not directly support the problem.
+
+Prioritize the mandatory requirements before secondary features.
+
+Do not invent requirements and attribute them to the organizers.
+
+Do not assume that adding more AI features automatically improves alignment.
+
+Do not assume that using Google services automatically improves alignment.
+
+If the exact official problem statement cannot be located, explicitly report that limitation and request the authoritative statement. Continue with general engineering improvements without claiming full alignment.
+
+The final project should have a clear explanation of:
+
+- Who experiences the problem.
+- What currently makes it difficult.
+- How SAPTHAGIRI AI CAMPUS improves the situation.
+- Which features directly address the problem.
+- How the solution can be demonstrated.
+- What measurable benefit the solution provides.
+- What would be required for real university deployment.
+
+==================================================
+8. REAL-WORLD INTERACTION
+==================================================
+
+The application must demonstrate meaningful workflows rather than a collection of disconnected screens.
+
+A. CAMPUS EVENTS
+
+- Display event details.
+- Support eligible event registration.
+- Validate capacity.
+- Prevent duplicate registrations.
+- Show registration status.
+- Allow authorized organizers to manage events.
+- Reflect relevant event changes in the interface.
+- Connect venue information to campus navigation.
+- Handle cancellation and schedule changes.
+
+B. CAMPUS ISSUE REPORTING
+
+- Accept structured reports.
+- Validate required fields.
+- Assign appropriate categories and priorities.
+- Store reports in the configured data store.
+- Track status changes.
+- Show authorized users relevant updates.
+- Connect operational data to the intelligence dashboard where implemented.
+
+C. LOST & FOUND
+
+- Create lost-item and found-item reports.
+- Match potentially related reports.
+- Show why a match was suggested.
+- Represent match confidence honestly.
+- Require appropriate ownership verification.
+- Avoid revealing sensitive information.
+- Provide an authorized investigation-request workflow where supported.
+
+D. CAMPUS DISCOVERY AND NAVIGATION
+
+- Search facilities and buildings.
+- Display meaningful building information.
+- Connect selected destinations to available navigation.
+- Provide a searchable list as an alternative to the 3D map.
+
+E. AI CAMPUS GUIDE
+
+- Understand the user's current page.
+- Explain how to use the relevant feature.
+- Answer questions using available campus data.
+- Direct users to appropriate pages.
+- Provide a clear distinction between verified information, sample information, and uncertain suggestions.
+- Request confirmation before consequential actions.
+- Never claim to have completed an operation unless the backend confirms success.
+
+F. ROLE-BASED EXPERIENCE
+
+Student, New Student, Parent, Faculty, Event Organizer, and Campus Administrator must receive appropriately scoped experiences.
+
+Parent access must be limited to authorized information.
+
+Administrator actions must require authorization.
+
+Demo personas must use synthetic data.
+
+G. REAL DATA VERSUS DEMO DATA
+
+Maintain a clear distinction between:
+
+- Synthetic demonstration data.
+- Locally persisted prototype data.
+- Data from live integrations.
+- Verified university data.
+
+Do not label synthetic data as actual university information.
+
+Do not present simulated notifications as real-world alerts.
+
+Do not present simulated predictions as validated forecasts.
+
+The demo must remain impressive and usable without falsely claiming production integration.
+
+==================================================
+9. THE ORIGINAL VISUAL REQUIREMENTS REMAIN MANDATORY
+==================================================
+
+The frontend must still follow the approved futuristic 3D visual reference.
+
+Maintain:
+
+- Realistic campus imagery.
+- Cinematic architectural composition.
+- Premium navy and electric-blue styling.
+- Restrained gold accents.
+- Layered glass panels.
+- A floating AI assistant.
+- A polished campus map.
+- Separate light and dark modes.
+- Responsive layouts.
+- The complete required sitemap.
+
+Do not allow the engineering audit to become an excuse for reverting to a childish interface or generic template.
+
+Do not sacrifice accessibility for 3D effects.
+
+Do not sacrifice performance for unnecessary visual complexity.
+
+Preserve the original reference image files unchanged.
+
+Build the functional interface around the approved design rather than replacing the reference assets.
+
+==================================================
+10. EXECUTION STRATEGY
+==================================================
+
+Work in the following order.
+
+PHASE 1: AUDIT
+
+Inspect the codebase, architecture, existing functionality, environment configuration, dependencies, and available documentation.
+
+Identify current failures and incomplete implementations.
+
+PHASE 2: REQUIREMENT TRACEABILITY
+
+Inspect the exact official problem statement.
+
+Create the requirement-to-feature-to-test matrix.
+
+If the official statement is missing, record that limitation.
+
+PHASE 3: CRITICAL ENGINEERING FIXES
+
+Fix critical security defects, broken core flows, and architectural problems that block the demonstration.
+
+PHASE 4: FRONTEND REDESIGN
+
+Implement the approved futuristic 3D visual language across the entire required sitemap.
+
+Preserve working functionality.
+
+PHASE 5: INTEGRATIONS
+
+Implement and verify the supported Google services and AI capabilities that are configured and relevant.
+
+Clearly document missing credentials.
+
+PHASE 6: TESTING
+
+Run the available unit, integration, build, security, accessibility, and end-to-end checks.
+
+Fix discovered defects.
+
+PHASE 7: DEMONSTRATION READINESS
+
+Verify the main user journeys.
+
+Prepare a reliable demo experience with clearly labelled synthetic data.
+
+Ensure that missing third-party credentials do not break unrelated features.
+
+PHASE 8: FINAL REPORT
+
+Provide an evidence-based report covering:
+
+- Code quality.
+- Security.
+- Testing.
+- Performance.
+- Accessibility.
+- Google integrations.
+- Problem statement alignment.
+- Real-world workflows.
+- Visual quality.
+- Known limitations.
+- Remaining deployment requirements.
+
+Never claim perfection without evidence.
+
+Never claim that a test was run when it was not run.
+
+Never claim a live integration works when it has not been verified.
+
+Do not publish or deploy without authorization.
+
+FINAL OBJECTIVE:
+
+Build the strongest feasible hackathon submission by combining an exceptional futuristic 3D campus interface with sound engineering, measurable reliability, responsible AI, accessible interactions, useful integrations, and direct alignment with the official problem statement.

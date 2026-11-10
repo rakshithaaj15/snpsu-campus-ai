@@ -1,0 +1,156 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+paths:
+  /campus-guide/status:
+    get:
+      operationId: getCampusGuideStatus
+      tags: [campus-guide]
+      responses:
+        "200":
+          description: Provider configuration, not a claim of verified connectivity
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CampusGuideStatus"
+  /campus-guide/chat:
+    post:
+      operationId: askCampusGuide
+      tags: [campus-guide]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CampusGuideRequest"
+      responses:
+        "200":
+          description: Grounded Gemini answer or explicitly identified demo fallback
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CampusGuideAnswer"
+        "400":
+          description: Invalid message or context
+        "429":
+          description: Request limit reached
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+components:
+  schemas:
+    GuideAction:
+      type: object
+      required: [label, href]
+      properties:
+        label:
+          type: string
+          maxLength: 100
+        href:
+          type: string
+          maxLength: 300
+    CampusGuideStatus:
+      type: object
+      required: [mode, reason, model]
+      properties:
+        mode:
+          type: string
+          enum: [demo, configured]
+        reason:
+          type: string
+        model:
+          type: string
+          nullable: true
+    GuideHistory:
+      type: object
+      required: [role, text]
+      properties:
+        role:
+          type: string
+          enum: [user, assistant]
+        text:
+          type: string
+          maxLength: 6000
+    CampusGuideRequest:
+      type: object
+      required: [message, history, context]
+      properties:
+        message:
+          type: string
+          minLength: 1
+          maxLength: 1200
+        history:
+          type: array
+          maxItems: 12
+          items:
+            $ref: "#/components/schemas/GuideHistory"
+        context:
+          type: object
+          required: [role, page, facts, demoReply]
+          properties:
+            role:
+              type: string
+              enum: [student, newstudent, parent, faculty, organizer, admin]
+            page:
+              type: string
+              maxLength: 100
+            facts:
+              type: string
+              maxLength: 16000
+            demoReply:
+              type: object
+              required: [text, actions]
+              properties:
+                text:
+                  type: string
+                  maxLength: 6000
+                actions:
+                  type: array
+                  maxItems: 5
+                  items:
+                    $ref: "#/components/schemas/GuideAction"
+    CampusGuideAnswer:
+      type: object
+      required: [text, actions, source, notice, model]
+      properties:
+        text:
+          type: string
+        actions:
+          type: array
+          items:
+            $ref: "#/components/schemas/GuideAction"
+        source:
+          type: string
+          enum: [demo, gemini]
+        notice:
+          type: string
+        model:
+          type: string
+          nullable: true
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+

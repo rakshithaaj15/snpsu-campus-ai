@@ -1,0 +1,532 @@
+PROJECT: SAPTHAGIRI AI CAMPUS
+TASK: COMPLETE FRONTEND VISUAL REDESIGN — PREMIUM, CINEMATIC, FUTURISTIC 3D
+
+You are working on the existing SAPTHAGIRI AI CAMPUS project.
+
+Your current frontend does NOT meet the required visual quality.
+
+The current interface looks childish, cartoonish, overly illustrated, and visually generic. It does not look like a premium, professional, futuristic university platform.
+
+I do not want minor improvements to the current design.
+
+I want you to AUDIT THE EXISTING FRONTEND AND COMPLETELY REDESIGN ITS VISUAL PRESENTATION while preserving the required product features, routes, and working functionality.
+
+==================================================
+1. THE APPROVED REFERENCE IMAGE IS THE VISUAL AUTHORITY
+==================================================
+
+Use the uploaded futuristic SAPTHAGIRI NPS UNIVERSITY website reference image as the primary visual authority.
+
+The reference depicts:
+- A realistic university campus as the main hero background.
+- Cinematic architectural photography.
+- Deep navy and midnight-blue surfaces.
+- Electric-blue lighting and restrained gold accents.
+- Premium transparent glass panels.
+- Sophisticated 3D spatial composition.
+- Floating interface panels with realistic depth.
+- A futuristic floating AI campus companion.
+- A premium navigation system.
+- A realistic, interactive-looking isometric 3D campus map.
+- Carefully composed information cards.
+- Professional university branding.
+- A coherent, high-end futuristic visual identity.
+
+The reference image is NOT optional inspiration.
+
+It is the approved design specification.
+
+Follow its visual language, composition, lighting, contrast, hierarchy, proportions, panel treatment, and overall atmosphere as closely as possible.
+
+EXACT IMAGE-PRESERVATION INSTRUCTION:
+
+"Do not change or do not edit or do not adopt even a single pixel difference from this. You have to use the words, the same words what I have used now."
+
+"It should not even change or edit, or it should not disturb even a single pixel from this image."
+
+These are mandatory preservation instructions.
+
+The original reference image file must remain unchanged.
+
+Do not:
+- Edit the original image.
+- Regenerate it.
+- Crop it.
+- Recolour it.
+- Compress it.
+- Replace it.
+- Overwrite it.
+- Modify its dimensions.
+- Use an edited version in place of the original.
+- Claim that a modified image is the original.
+
+Keep the source image file exactly as supplied.
+
+IMPORTANT DISTINCTION:
+
+The reference image is a visual specification for the website.
+
+Do not simply display the reference collage as the website.
+
+Build the actual website using functional React components, CSS, real layouts, and appropriate interactive elements.
+
+Reproduce the design faithfully in the live interface.
+
+If an exact photograph is supplied, use that original photograph without altering the source file.
+
+If the reference image contains a particular campus photograph, do not replace it with a cartoon illustration or an unrelated AI-generated university.
+
+If the reference image assets are not present in the project, inspect the available files and clearly report what is missing. Do not silently invent substitute assets and claim they are identical.
+
+==================================================
+2. ABSOLUTELY NO CHILDISH VISUAL DESIGN
+==================================================
+
+The following styles are prohibited:
+
+- Cartoon university buildings.
+- Flat vector illustrations of buildings.
+- Childish educational website aesthetics.
+- Toy-like architecture.
+- Generic AI-generated cartoon scenery.
+- Playful children's app styling.
+- Oversized colourful buttons without visual purpose.
+- Excessive rounded cards.
+- Excessive pastel backgrounds.
+- Flat, lifeless dashboard layouts.
+- Generic template-style hero sections.
+- Random decorative shapes covering the interface.
+- Excessive gradients that make the interface look artificial.
+- Emoji used as substitutes for professional icons.
+- A cute mascot that makes the university look like a children's product.
+- Fake 3D effects made entirely from shadows.
+- Excessive animations that reduce usability.
+
+The existing illustrated campus background must be removed from the live website if it conflicts with the approved realistic visual reference.
+
+Replace it with the approved original photographic asset where available.
+
+The result must resemble a premium product designed by a world-class team combining university digital infrastructure, high-end SaaS, cinematic architectural visualization, and sophisticated 3D interface design.
+
+The aesthetic should feel mature, intelligent, powerful, elegant, and technologically advanced.
+
+==================================================
+3. THE 3D EXPERIENCE IS THE MAIN PRIORITY
+==================================================
+
+The website must feel spatial, immersive, and futuristic.
+
+Do not interpret "3D" as merely adding box shadows to ordinary cards.
+
+Use a coherent combination of:
+
+A. REALISTIC CAMPUS ENVIRONMENT
+
+Use the supplied campus photographs as the visual foundation.
+
+Create a cinematic hero composition with carefully controlled contrast, realistic architecture, atmospheric depth, and professional lighting.
+
+Keep headings and controls readable against the background.
+
+B. LAYERED SPATIAL INTERFACE
+
+Use carefully arranged foreground, middle-ground, and background layers.
+
+Interface panels should feel like they occupy space above the campus environment.
+
+Use restrained:
+- Perspective.
+- Depth.
+- Layering.
+- Translucency.
+- Reflections.
+- Edge lighting.
+- Ambient illumination.
+- Hover elevation.
+- Smooth transitions.
+
+Do not apply every effect everywhere. Use them intentionally.
+
+C. FLOATING AI CAMPUS ASSISTANT
+
+The AI assistant is one of the most important visual features.
+
+Create a persistent floating AI assistant interface inspired by the approved reference.
+
+It should feel like a futuristic campus intelligence companion, not a children's cartoon robot.
+
+Use a sophisticated holographic or luminous 3D visual treatment.
+
+The assistant should have:
+- A subtle idle floating animation.
+- Restrained blue illumination.
+- A polished presence near the edge of the screen.
+- A contextual speech bubble or status message when appropriate.
+- A clear button to open the assistant.
+- An expandable premium glass chat panel.
+- Message history.
+- A text input.
+- Send controls.
+- Microphone controls when supported.
+- Visible listening, processing, speaking, and idle states.
+- Stop and close controls.
+- A clear fallback when voice or AI credentials are unavailable.
+
+The floating assistant must never obstruct essential controls or cover important text.
+
+On mobile, adapt its position and panel dimensions intelligently.
+
+Respect the user's reduced-motion preference.
+
+D. INTERACTIVE 3D CAMPUS MAP
+
+The campus map should be a signature feature.
+
+Use an appropriate mapping or 3D rendering approach supported by the existing project.
+
+Show a realistic campus representation with clearly identified buildings and facilities.
+
+Include:
+- Building labels.
+- Search.
+- Facility categories.
+- Building detail panels.
+- Navigation controls.
+- 2D/3D controls where genuinely supported.
+- Selected-building highlighting.
+- Useful map interactions.
+- Responsive controls.
+
+Do not present a static screenshot as a functioning interactive map.
+
+Do not claim that a full 3D map exists if only a 2D image or placeholder has been implemented.
+
+E. PROFESSIONAL MOTION
+
+Use subtle, purposeful animations for:
+- Floating assistant movement.
+- Panel transitions.
+- Navigation changes.
+- Hover and focus states.
+- Loading and processing.
+- Selected map objects.
+- Opening and closing the chat panel.
+
+Avoid excessive parallax, distracting movement, or animation that makes the interface difficult to use.
+
+==================================================
+4. DESIGN SYSTEM
+==================================================
+
+Use the following visual direction.
+
+PRIMARY PALETTE:
+- Midnight navy.
+- Deep ocean blue.
+- Dark blue-black.
+- Electric blue.
+- Restrained cyan illumination.
+- Premium metallic gold.
+- White and carefully balanced cool grey.
+
+LIGHT MODE:
+- Premium, bright, architectural, and sophisticated.
+- Clean white or cool-neutral surfaces.
+- Restrained blue and gold accents.
+- Clear typography and readable contrast.
+- Subtle depth rather than flat pastel illustrations.
+- Preserve the same professional 3D design language.
+
+DARK MODE:
+- Cinematic and immersive.
+- Deep navy backgrounds.
+- Translucent glass surfaces.
+- Electric-blue highlights.
+- Restrained gold accents.
+- Carefully controlled reflections and glow.
+- Strong readability.
+
+Do not merely invert the light theme to create the dark theme.
+
+TYPOGRAPHY:
+- Use a modern, professional sans-serif font.
+- Establish a clear hierarchy.
+- Use large, powerful hero typography.
+- Keep body copy readable.
+- Avoid childish fonts.
+- Avoid unnecessarily oversized text in dashboard cards.
+
+ICONS:
+- Use a coherent professional icon set.
+- Keep icon size, stroke, alignment, and spacing consistent.
+- Do not use emoji as primary interface icons.
+
+COMPONENTS:
+- Consistent spacing.
+- Consistent border treatment.
+- Controlled corner radii.
+- Refined buttons.
+- Carefully designed form fields.
+- Professional navigation.
+- High-quality empty, loading, error, and success states.
+
+==================================================
+5. LANDING PAGE
+==================================================
+
+Redesign the landing page to closely reproduce the approved reference.
+
+The hero should contain:
+
+1. Professional university branding.
+2. Sophisticated navigation.
+3. A realistic campus photographic background.
+4. A strong SAPTHAGIRI NPS UNIVERSITY heading.
+5. A concise, professional description.
+6. A prominent Explore Demo action.
+7. A separate Sign In action.
+8. A carefully arranged campus quick-access panel.
+9. Campus Map.
+10. Find Student.
+11. Events & Activities.
+12. Lost & Found.
+13. A floating AI Campus Guide.
+14. A compact statistics section where data is supported.
+
+The composition must feel deliberate and premium.
+
+Do not allow text to collide with the campus image.
+
+Do not allow cards to obscure the main heading.
+
+Do not create an illustration-heavy layout.
+
+The screenshot reference is the authority for the intended visual balance.
+
+==================================================
+6. PRESERVE THE COMPLETE REQUIRED SITEMAP
+==================================================
+
+The visual redesign must not remove, rename, or merge the required pages.
+
+SAPTHAGIRI AI CAMPUS
+
+Landing Page
+
+Demo Experience:
+- Student
+- New Student
+- Parent
+- Faculty
+- Event Organizer
+- Campus Administrator
+
+Authentication:
+- Login
+- Register
+
+Onboarding:
+- Student
+- New Student
+- Parent
+- Faculty
+
+CAMPUS PORTAL:
+- Home / AI Assistant
+- Campus Map
+- Find Student
+- Campus Discovery
+- Events & Activities
+  - Event Management
+- Lost & Found
+  - AI Investigation
+- Report Issue
+- Campus Intelligence
+- Predictions
+- Notifications
+- Profile / Settings
+
+Every destination must have a meaningful interface.
+
+Preserve the existing working functionality where possible.
+
+Do not replace the entire application with a beautiful but nonfunctional landing page.
+
+Extend the same approved design language throughout every module.
+
+==================================================
+7. DEMO MODE AND AUTHENTICATION
+==================================================
+
+DEMO MODE:
+
+Provide six demo personas:
+- Student.
+- New Student.
+- Parent.
+- Faculty.
+- Event Organizer.
+- Campus Administrator.
+
+A user must be able to select a persona and enter a preconfigured sample experience without creating an account.
+
+Clearly label sample data as DEMO DATA.
+
+Provide a way to switch personas or reset the demo.
+
+AUTHENTICATION:
+
+Keep Login and Register separate from Demo Mode.
+
+Preserve Google authentication and email/password flows if they are already configured.
+
+Do not falsely claim that authentication is functional when it is only a visual mockup.
+
+Do not expose private credentials in frontend code.
+
+ONBOARDING:
+
+Provide distinct flows for Student, New Student, Parent, and Faculty.
+
+Use the same premium design system.
+
+==================================================
+8. THE REST OF THE PORTAL
+==================================================
+
+Apply the approved visual design to every required module.
+
+CAMPUS MAP:
+Immersive spatial presentation, building search, facility details, and navigation.
+
+FIND STUDENT:
+Professional search interface with appropriate authorization and privacy protections.
+
+CAMPUS DISCOVERY:
+Photographic cards and useful information about campus facilities, departments, services, and resources.
+
+EVENTS & ACTIVITIES:
+Professional event cards, details, registration, venue information, and schedules.
+
+EVENT MANAGEMENT:
+Organizer dashboard, event creation, registrations, capacity, announcements, check-in, and venue updates.
+
+LOST & FOUND:
+Professional reporting and search flows.
+
+AI INVESTIGATION:
+A structured timeline, possible locations, confidence levels, and an authorized security-review workflow.
+
+REPORT ISSUE:
+A clean, structured form with location, category, urgency, description, and status.
+
+CAMPUS INTELLIGENCE:
+Professional operational dashboards and evidence-based metrics.
+
+PREDICTIONS:
+Clearly distinguish predictions from verified facts. Display uncertainty where appropriate.
+
+NOTIFICATIONS:
+A clear notification centre with meaningful states.
+
+PROFILE / SETTINGS:
+Account settings, role information, theme selection, privacy controls, and relevant preferences.
+
+Do not fabricate live campus data or claim that predictions are based on real information when they are only demo examples.
+
+==================================================
+9. TECHNICAL IMPLEMENTATION
+==================================================
+
+Before modifying code:
+
+1. Inspect the existing project structure.
+2. Identify the framework and current design system.
+3. Identify existing working routes and features.
+4. Locate the uploaded reference images and campus photographs.
+5. Identify existing 3D libraries, if any.
+6. Identify unfinished work from earlier implementation attempts.
+7. Preserve useful functionality.
+
+Then implement the redesign in the existing project.
+
+Do not create an unrelated replacement project.
+
+Do not delete working backend logic just to simplify the frontend.
+
+Use the project's existing framework and dependencies where appropriate.
+
+If a genuine 3D implementation requires a library, choose a suitable option compatible with the current stack.
+
+Do not add a heavy dependency merely to create decorative effects.
+
+Keep performance in mind, especially on mobile devices.
+
+Use responsive breakpoints and accessible controls.
+
+Ensure that forms, links, buttons, and navigation work.
+
+Ensure that theme selection works consistently across routes.
+
+Ensure that the floating AI assistant opens and closes correctly.
+
+Ensure that the demo persona selection works.
+
+Ensure that the map controls accurately represent implemented capabilities.
+
+If Gemini or another external AI service is not configured, implement a clear and honest fallback rather than inventing successful API responses.
+
+==================================================
+10. FINAL VISUAL QUALITY GATE
+==================================================
+
+Do not consider the task complete simply because the app compiles.
+
+Compare the running website against the approved reference image.
+
+Evaluate:
+
+- Realism of the campus background.
+- Overall visual maturity.
+- Cinematic composition.
+- Quality of the 3D treatment.
+- Layered glass panels.
+- Floating AI assistant.
+- Typography.
+- Colour consistency.
+- Navigation.
+- Spacing.
+- Responsive behaviour.
+- Light and dark themes.
+- Consistency across the entire sitemap.
+
+Explicitly check that the interface no longer looks like a children's website.
+
+If the page still relies on cartoon buildings, flat illustrations, generic pastel cards, or ordinary dashboard templates, the visual redesign is not complete.
+
+Fix the deviations before reporting completion.
+
+Take screenshots of the actual running implementation when possible.
+
+Report honestly:
+1. What has been redesigned.
+2. Which routes are functional.
+3. Whether the 3D map is genuinely interactive.
+4. Whether the AI assistant is connected to a real API.
+5. Whether voice interaction works.
+6. Whether authentication is configured.
+7. What remains incomplete.
+
+Do not publish or deploy without authorization.
+
+FINAL PRIORITY:
+
+A premium, realistic, cinematic, futuristic 3D interface that closely follows the approved reference image, while preserving the required sitemap and functional website behaviour.
+
+Do not give me another childish illustration-based design.
+
+Do not give me a generic SaaS template.
+
+Do not merely recolour the current frontend.
+
+Audit, redesign, implement, test, compare, and correct.
